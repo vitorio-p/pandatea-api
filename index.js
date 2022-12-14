@@ -38,8 +38,8 @@ async function main() {
       type: req.body.type,
       price: req.body.price
     });
-    req.status(200);
-    req.send(newData);
+    res.status(200);
+    res.send(newData);
   })
 }
 
